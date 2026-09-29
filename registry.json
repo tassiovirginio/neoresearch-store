@@ -1,0 +1,458 @@
+{
+  "version": "1",
+  "updated_at": "2026-09-29",
+  "plugins": [
+    {
+      "id": "crossref",
+      "name": "CrossRef",
+      "version": "1.0.0",
+      "author": "NeoResearch",
+      "description": "Busca de artigos científicos e DOIs na API pública do CrossRef",
+      "target_module": "paper_search",
+      "tags": [
+        "doi",
+        "editoras",
+        "metadados",
+        "crossref"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/crossref.lua",
+      "homepage": "https://www.crossref.org/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "version": "1.0.0",
+      "author": "NeoResearch",
+      "description": "Busca de preprints em computação, física e matemática no repositório arXiv.org",
+      "target_module": "paper_search",
+      "tags": [
+        "preprints",
+        "computação",
+        "física",
+        "matemática",
+        "arxiv"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/arxiv.lua",
+      "homepage": "https://arxiv.org/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "version": "1.0.0",
+      "author": "NeoResearch",
+      "description": "Busca de literatura científica global com ampla cobertura e identificação de acesso aberto",
+      "target_module": "paper_search",
+      "tags": [
+        "acesso aberto",
+        "global",
+        "openalex"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/openalex.lua",
+      "homepage": "https://openalex.org/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "europe_pmc",
+      "name": "Europe PMC",
+      "version": "1.0.0",
+      "author": "NeoResearch",
+      "description": "Busca de artigos de biologia, medicina e ciências biomédicas com links diretos de acesso aberto",
+      "target_module": "paper_search",
+      "tags": [
+        "biomedicina",
+        "saúde",
+        "acesso aberto",
+        "europe pmc"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/europe_pmc.lua",
+      "homepage": "https://europepmc.org/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "semantic_scholar",
+      "name": "Semantic Scholar",
+      "version": "1.0.0",
+      "author": "NeoResearch",
+      "description": "Busca semântica com suporte a inteligência artificial (requer chave opcional para alto volume)",
+      "target_module": "paper_search",
+      "tags": [
+        "inteligência artificial",
+        "semântica",
+        "semantic scholar"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/semantic_scholar.lua",
+      "homepage": "https://www.semanticscholar.org/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "dblp",
+      "name": "DBLP Computer Science",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Índice de literatura científica em Ciência da Computação da DBLP Trier",
+      "target_module": "paper_search",
+      "tags": [
+        "computação",
+        "conferências",
+        "dblp"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/dblp.lua",
+      "homepage": "https://dblp.org/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "pubmed",
+      "name": "PubMed / NCBI",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Busca de literatura médica e biomédica na National Library of Medicine (NLM / NIH)",
+      "target_module": "paper_search",
+      "tags": [
+        "medicina",
+        "saúde",
+        "biologia",
+        "pubmed"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/pubmed.lua",
+      "homepage": "https://pubmed.ncbi.nlm.nih.gov/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "scielo",
+      "name": "SciELO Open Access",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Biblioteca científica eletrônica online de periódicos da América Latina e Ibero-América",
+      "target_module": "paper_search",
+      "tags": [
+        "acesso aberto",
+        "brasil",
+        "américa latina",
+        "scielo"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/scielo.lua",
+      "homepage": "https://scielo.org/",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "sol_sbc",
+      "name": "SBC OpenLib (SOL)",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Busca de artigos, anais de eventos e periódicos da Sociedade Brasileira de Computação (SBC OpenLib / https://sol.sbc.org.br/)",
+      "target_module": "paper_search",
+      "tags": [
+        "sbc",
+        "computação",
+        "brasil",
+        "anais",
+        "periódicos",
+        "sol"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/sol_sbc.lua",
+      "homepage": "https://sol.sbc.org.br/",
+      "min_app_version": "0.18.0"
+    },
+    {
+      "id": "doaj",
+      "name": "DOAJ (Acesso Aberto)",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Artigos de periódicos de acesso aberto revisados por pares indexados no Directory of Open Access Journals",
+      "target_module": "paper_search",
+      "tags": [
+        "acesso aberto",
+        "periódicos",
+        "revisão por pares",
+        "doaj"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/doaj.lua",
+      "homepage": "https://doaj.org/",
+      "min_app_version": "0.36.0"
+    },
+    {
+      "id": "zenodo",
+      "name": "Zenodo",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Publicações, preprints, relatórios e teses depositados no repositório aberto Zenodo (só arquivos de acesso aberto)",
+      "target_module": "paper_search",
+      "tags": [
+        "acesso aberto",
+        "preprints",
+        "teses",
+        "relatórios",
+        "zenodo"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/zenodo.lua",
+      "homepage": "https://zenodo.org/",
+      "min_app_version": "0.36.0"
+    },
+    {
+      "id": "hal",
+      "name": "HAL (França)",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Arquivo aberto HAL (CNRS, Inria e universidades francesas) com artigos, teses e trabalhos de conferências",
+      "target_module": "paper_search",
+      "tags": [
+        "acesso aberto",
+        "frança",
+        "teses",
+        "hal"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/hal.lua",
+      "homepage": "https://hal.science/",
+      "min_app_version": "0.36.0"
+    },
+    {
+      "id": "openaire",
+      "name": "OpenAIRE",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Publicações do grafo de pesquisa europeu OpenAIRE, com identificação de acesso aberto",
+      "target_module": "paper_search",
+      "tags": [
+        "acesso aberto",
+        "europa",
+        "openaire"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/openaire.lua",
+      "homepage": "https://www.openaire.eu/",
+      "min_app_version": "0.36.0"
+    },
+    {
+      "id": "openreview",
+      "name": "OpenReview",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Artigos submetidos e aceitos em conferências e workshops de IA/ML publicados abertamente no OpenReview",
+      "target_module": "paper_search",
+      "tags": [
+        "ia",
+        "aprendizado de máquina",
+        "conferências",
+        "openreview"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/openreview.lua",
+      "homepage": "https://openreview.net/",
+      "min_app_version": "0.36.0"
+    },
+    {
+      "id": "unpaywall",
+      "name": "Unpaywall (DOI → acesso aberto)",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Busca por DOI: devolve os metadados e o PDF legal de acesso aberto do artigo, quando existir (OurResearch/Unpaywall)",
+      "target_module": "paper_search",
+      "tags": [
+        "doi",
+        "acesso aberto",
+        "pdf",
+        "unpaywall"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/unpaywall.lua",
+      "homepage": "https://unpaywall.org/",
+      "min_app_version": "0.36.0"
+    },
+    {
+      "id": "core",
+      "name": "CORE (Acesso Aberto)",
+      "version": "1.0.0",
+      "author": "NeoResearch Community",
+      "description": "Agregador CORE de artigos em acesso aberto com texto completo (requer chave gratuita da API nas configurações do plugin)",
+      "target_module": "paper_search",
+      "tags": [
+        "acesso aberto",
+        "texto completo",
+        "core",
+        "requer chave"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/paper_search/core.lua",
+      "homepage": "https://core.ac.uk/",
+      "min_app_version": "0.36.0"
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw (Quadro Branco)",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Aba de quadro branco Excalidraw em cada projeto, com salvamento automático.",
+      "target_module": "project_tab",
+      "tags": [
+        "quadro branco",
+        "desenho",
+        "projeto",
+        "excalidraw"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/project_tab/excalidraw.lua",
+      "homepage": "https://excalidraw.com/",
+      "min_app_version": "0.30.0"
+    },
+    {
+      "id": "markdown_notes",
+      "name": "Notas em Markdown",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Aba com um documento Markdown em branco por projeto, com pré-visualização e salvamento automático.",
+      "target_module": "project_tab",
+      "tags": [
+        "notas",
+        "markdown",
+        "projeto"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/project_tab/markdown_notes.lua",
+      "homepage": "https://github.com/tassiovirginio/colabpesquisa",
+      "min_app_version": "0.30.0"
+    },
+    {
+      "id": "mermaid_flowchart",
+      "name": "Mermaid Flowchart",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Aba com editor de diagramas Mermaid (fluxogramas, sequência, classes e mais) com pré-visualização ao vivo e salvamento automático.",
+      "target_module": "project_tab",
+      "tags": [
+        "diagramas",
+        "fluxograma",
+        "mermaid",
+        "projeto"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/project_tab/mermaid_flowchart.lua",
+      "homepage": "https://mermaid.js.org/",
+      "min_app_version": "0.30.0"
+    },
+    {
+      "id": "latex",
+      "name": "LaTeX (estilo Overleaf)",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Editor LaTeX por projeto com compilação para PDF, pré-visualização, registro e erros clicáveis. Requer o TinyTeX instalado no servidor (scripts/install_tinytex.sh).",
+      "target_module": "project_tab",
+      "tags": [
+        "latex",
+        "overleaf",
+        "pdf",
+        "projeto"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/project_tab/latex.lua",
+      "homepage": "https://www.tug.org/texlive/",
+      "min_app_version": "0.32.0"
+    },
+    {
+      "id": "telegram_bot",
+      "name": "Telegram Bot Notifier & Assistente",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Integração oficial com Telegram Bot API para envio de alertas, notificações de prazos e respostas a comandos de pesquisa.",
+      "target_module": "chat_bot",
+      "tags": [
+        "telegram",
+        "bot",
+        "notificações",
+        "chat"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/chat_bot/telegram_bot.lua",
+      "homepage": "https://core.telegram.org/bots",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "discord_bot",
+      "name": "Discord Bot & Webhooks",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Integração oficial com Discord via Webhooks com Rich Embeds coloridos para artigos, defesas e eventos do laboratório.",
+      "target_module": "chat_bot",
+      "tags": [
+        "discord",
+        "bot",
+        "notificações",
+        "chat"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/chat_bot/discord_bot.lua",
+      "homepage": "https://discord.com/developers/docs",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "internal_chat",
+      "name": "Chat Interno & Assistente",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Bate-papo flutuante em tempo real entre os membros do laboratório com assistente acadêmico automatizado.",
+      "target_module": "chat_bot",
+      "tags": [
+        "chat",
+        "interno",
+        "bot",
+        "assistente",
+        "tempo-real"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/chat_bot/internal_chat.lua",
+      "homepage": "https://github.com/tassiovirginio/colabpesquisa",
+      "min_app_version": "0.24.2"
+    },
+    {
+      "id": "whatsapp_bot",
+      "name": "WhatsApp Bot & Assistente",
+      "version": "1.0.0",
+      "author": "NeoResearch Oficial",
+      "description": "Processamento modular de mensagens e comandos (@bot) para grupos e chats de WhatsApp com respostas customizáveis.",
+      "target_module": "whatsapp_bot",
+      "tags": [
+        "whatsapp",
+        "bot",
+        "comandos",
+        "assistente"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/whatsapp_bot/whatsapp_bot.lua",
+      "homepage": "https://github.com/tassiovirginio/colabpesquisa",
+      "min_app_version": "0.17.0"
+    },
+    {
+      "id": "world_radio",
+      "name": "Rádio Global & Lofi Ambient",
+      "version": "1.1.0",
+      "author": "NeoResearch Media",
+      "description": "Player flutuante de rádio ao vivo com estações do Brasil (inclusive Salvador-BA) e do mundo, lofi/foco, ambient, clássica e jazz, com visualizador de ondas rítmicas. A lista de estações vive neste script.",
+      "target_module": "media",
+      "tags": [
+        "radio",
+        "musica",
+        "lofi",
+        "foco",
+        "player",
+        "brasil"
+      ],
+      "icon_url": null,
+      "download_url": "https://raw.githubusercontent.com/tassiovirginio/neoresearch-store/main/plugins/media/world_radio.lua",
+      "homepage": "https://github.com/tassiovirginio/colabpesquisa",
+      "min_app_version": "0.20.0"
+    }
+  ]
+}
