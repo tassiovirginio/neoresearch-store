@@ -4,14 +4,14 @@
 plugin = {
     id = "unpaywall",
     name = "Unpaywall (DOI → acesso aberto)",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "NeoResearch Community",
     description = "Busca por DOI: devolve os metadados e o PDF legal de acesso aberto do artigo, quando existir (OurResearch/Unpaywall)",
     target = "paper_search",
     default_enabled = false
 }
 
-local UA = "NeoResearch/1.0 (+https://neoresearch.science; mailto:neoresearchglobal@gmail.com)"
+local UA = "NeoResearch/1.0 (+https://neoresearch.science; mailto:contato@neoresearch.science)"
 
 -- JSON null chega ao Lua como userdata: só aceite o tipo esperado.
 local function T(v) if type(v) == "table" then return v end return nil end
@@ -49,7 +49,7 @@ function search(params)
     -- (no modo "auto" também vale: basta a consulta ter cara de DOI)
     local doi = normalize_doi(params.query)
     if not doi:match("^10%.%d+/") then return {} end
-    local email = (params.config and params.config.email) or "neoresearchglobal@gmail.com"
+    local email = (params.config and params.config.email) or "contato@neoresearch.science"
     local url = "https://api.unpaywall.org/v2/" .. http.url_encode(doi) .. "?email=" .. http.url_encode(email)
 
     log("Consultando Unpaywall: " .. url)

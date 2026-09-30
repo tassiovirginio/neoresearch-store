@@ -4,14 +4,14 @@
 plugin = {
     id = "openreview",
     name = "OpenReview",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "NeoResearch Community",
     description = "Artigos submetidos e aceitos em conferências e workshops de IA/ML publicados abertamente no OpenReview",
     target = "paper_search",
     default_enabled = false
 }
 
-local UA = "NeoResearch/1.0 (+https://neoresearch.science; mailto:neoresearchglobal@gmail.com)"
+local UA = "NeoResearch/1.0 (+https://neoresearch.science; mailto:contato@neoresearch.science)"
 
 -- JSON null chega ao Lua como userdata: só aceite o tipo esperado.
 local function T(v) if type(v) == "table" then return v end return nil end

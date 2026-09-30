@@ -6,7 +6,7 @@
 plugin = {
     id = "sol_sbc",
     name = "SBC OpenLib (SOL)",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "NeoResearch Community",
     description = "Busca de artigos, anais de eventos e periódicos da Sociedade Brasileira de Computação (SBC OpenLib / https://sol.sbc.org.br/)",
     target = "paper_search",
@@ -87,7 +87,7 @@ local function search_sol_harvest(query, search_type, limit)
 
     local res = http.get(url, {
         headers = {
-            ["User-Agent"] = "NeoResearch/1.0 (+https://sol.sbc.org.br; mailto:neoresearchglobal@gmail.com)"
+            ["User-Agent"] = "NeoResearch/1.0 (+https://sol.sbc.org.br; mailto:contato@neoresearch.science)"
         },
         timeout_secs = 10
     })
@@ -155,7 +155,7 @@ function search(params)
     -- Membro CrossRef 3742 = Sociedade Brasileira de Computação (SBC / SOL)
     -- Todos os artigos depositados pela SBC possuem prefixo 10.5753 e apontam para sol.sbc.org.br
     local base_url = "https://api.crossref.org/works"
-    local contact_email = "neoresearchglobal@gmail.com"
+    local contact_email = "contato@neoresearch.science"
     local url = ""
 
     if search_type == "doi" then
@@ -190,7 +190,7 @@ function search(params)
     log("Consultando SBC OpenLib via CrossRef (Member 3742): " .. url)
     local res = http.get(url, {
         headers = {
-            ["User-Agent"] = "NeoResearch/1.0 (+https://sol.sbc.org.br; mailto:neoresearchglobal@gmail.com)"
+            ["User-Agent"] = "NeoResearch/1.0 (+https://sol.sbc.org.br; mailto:contato@neoresearch.science)"
         },
         timeout_secs = 12
     })

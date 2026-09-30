@@ -4,7 +4,7 @@
 plugin = {
     id = "openalex",
     name = "OpenAlex",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "NeoResearch",
     description = "Busca de literatura científica global com ampla cobertura e identificação de acesso aberto",
     target = "paper_search",
@@ -66,7 +66,7 @@ end
 
 function search(params)
     local base_url = "https://api.openalex.org/works"
-    local contact_email = "neoresearchglobal@gmail.com"
+    local contact_email = "contato@neoresearch.science"
     local url = ""
 
     if params.search_type == "doi" then

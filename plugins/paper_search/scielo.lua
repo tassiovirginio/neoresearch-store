@@ -5,7 +5,7 @@
 plugin = {
     id = "scielo",
     name = "SciELO Open Access",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "NeoResearch Community",
     description = "Biblioteca científica eletrônica online de periódicos da América Latina e Ibero-América",
     target = "paper_search",
@@ -32,7 +32,7 @@ function search(params)
     log("Consultando SciELO (CrossRef Member 340): " .. url)
     local res = http.get(url, {
         headers = {
-            ["User-Agent"] = "NeoResearch/1.0 (mailto:neoresearchglobal@gmail.com)"
+            ["User-Agent"] = "NeoResearch/1.0 (mailto:contato@neoresearch.science)"
         },
         timeout_secs = 12
     })

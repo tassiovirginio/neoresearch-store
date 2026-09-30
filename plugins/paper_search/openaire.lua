@@ -4,14 +4,14 @@
 plugin = {
     id = "openaire",
     name = "OpenAIRE",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "NeoResearch Community",
     description = "Publicações do grafo de pesquisa europeu OpenAIRE, com identificação de acesso aberto",
     target = "paper_search",
     default_enabled = false
 }
 
-local UA = "NeoResearch/1.0 (+https://neoresearch.science; mailto:neoresearchglobal@gmail.com)"
+local UA = "NeoResearch/1.0 (+https://neoresearch.science; mailto:contato@neoresearch.science)"
 
 -- JSON null chega ao Lua como userdata: só aceite o tipo esperado.
 local function T(v) if type(v) == "table" then return v end return nil end

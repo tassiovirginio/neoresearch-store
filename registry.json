@@ -5,7 +5,7 @@
     {
       "id": "crossref",
       "name": "CrossRef",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch",
       "description": "Busca de artigos científicos e DOIs na API pública do CrossRef",
       "target_module": "paper_search",
@@ -42,7 +42,7 @@
     {
       "id": "openalex",
       "name": "OpenAlex",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch",
       "description": "Busca de literatura científica global com ampla cobertura e identificação de acesso aberto",
       "target_module": "paper_search",
@@ -129,7 +129,7 @@
     {
       "id": "scielo",
       "name": "SciELO Open Access",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Biblioteca científica eletrônica online de periódicos da América Latina e Ibero-América",
       "target_module": "paper_search",
@@ -147,7 +147,7 @@
     {
       "id": "sol_sbc",
       "name": "SBC OpenLib (SOL)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Busca de artigos, anais de eventos e periódicos da Sociedade Brasileira de Computação (SBC OpenLib / https://sol.sbc.org.br/)",
       "target_module": "paper_search",
@@ -167,7 +167,7 @@
     {
       "id": "doaj",
       "name": "DOAJ (Acesso Aberto)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Artigos de periódicos de acesso aberto revisados por pares indexados no Directory of Open Access Journals",
       "target_module": "paper_search",
@@ -185,7 +185,7 @@
     {
       "id": "zenodo",
       "name": "Zenodo",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Publicações, preprints, relatórios e teses depositados no repositório aberto Zenodo (só arquivos de acesso aberto)",
       "target_module": "paper_search",
@@ -204,7 +204,7 @@
     {
       "id": "hal",
       "name": "HAL (França)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Arquivo aberto HAL (CNRS, Inria e universidades francesas) com artigos, teses e trabalhos de conferências",
       "target_module": "paper_search",
@@ -222,7 +222,7 @@
     {
       "id": "openaire",
       "name": "OpenAIRE",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Publicações do grafo de pesquisa europeu OpenAIRE, com identificação de acesso aberto",
       "target_module": "paper_search",
@@ -239,7 +239,7 @@
     {
       "id": "openreview",
       "name": "OpenReview",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Artigos submetidos e aceitos em conferências e workshops de IA/ML publicados abertamente no OpenReview",
       "target_module": "paper_search",
@@ -257,7 +257,7 @@
     {
       "id": "unpaywall",
       "name": "Unpaywall (DOI → acesso aberto)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Busca por DOI: devolve os metadados e o PDF legal de acesso aberto do artigo, quando existir (OurResearch/Unpaywall)",
       "target_module": "paper_search",
@@ -275,7 +275,7 @@
     {
       "id": "core",
       "name": "CORE (Acesso Aberto)",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "NeoResearch Community",
       "description": "Agregador CORE de artigos em acesso aberto com texto completo (requer chave gratuita da API nas configurações do plugin)",
       "target_module": "paper_search",

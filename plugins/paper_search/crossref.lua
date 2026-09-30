@@ -4,7 +4,7 @@
 plugin = {
     id = "crossref",
     name = "CrossRef",
-    version = "1.0.0",
+    version = "1.0.1",
     author = "NeoResearch",
     description = "Busca de artigos científicos e DOIs na API pública do CrossRef",
     target = "paper_search",
@@ -66,7 +66,7 @@ end
 
 function search(params)
     local base_url = "https://api.crossref.org/works"
-    local contact_email = "neoresearchglobal@gmail.com"
+    local contact_email = "contato@neoresearch.science"
     local url = ""
 
     if params.search_type == "doi" then
@@ -82,7 +82,7 @@ function search(params)
     log("Consultando CrossRef: " .. url)
     local res = http.get(url, {
         headers = {
-            ["User-Agent"] = "NeoResearch/1.0 (+https://github.com/tassiovirginio/colabpesquisa; mailto:neoresearchglobal@gmail.com)"
+            ["User-Agent"] = "NeoResearch/1.0 (+https://github.com/tassiovirginio/colabpesquisa; mailto:contato@neoresearch.science)"
         },
         timeout_secs = 12
     })
